@@ -18,7 +18,6 @@ createCanvas(540, 960);
   function draw_one_frame(words, vocal, drum, bass, other, counter){
     if (firstRun){
       rectMode(CENTER);
-
       CD = loadImage('FallBack.jpg')
       
       RH.push(loadImage('Bass1.png'));
@@ -41,7 +40,7 @@ createCanvas(540, 960);
     
     background(200);
     //image(CD, 75, 45, 250, 250);
-    image(CD, 45, 75, 250, 250);
+    //image(CD, 45, 75, 250, 250);
     
     var VocalFrame = int(map(vocal, 10, 100, 0, 4));
     console.log(VocalFrame);
@@ -62,7 +61,6 @@ createCanvas(540, 960);
     image(LH[DrumFrame], width/5, height/0.8)
     pop();
 
- 
     //draw a CD
     strokeWeight(1.2);
     stroke(250);
